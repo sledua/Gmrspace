@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('../assets/font/IcoMoon-Free.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('../assets/font/Fira_Sans/FiraSans-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('../assets/font/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('../assets/font/Merriweather/Merriweather-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+}
+:root {
+    --cl-light-blue-color: hsl(150, 1%, 68%);
+    --cl-pale-yellow: hsl(35, 39%, 78%);
+    --cl-navy-blue: hsl(217, 35%, 7%);
+    --cl-brownish-yellow: hsl(45, 23%, 44%);
+    --cl-dark-gray: hsl(220, 10%, 30%);
+    --cl-light-pink: hsl(242, 67%, 46%);
+    --ff-FiraSans-Medium: "FiraSans-Medium", sans-serif;
+    --ff-Merriweather-Regular: "Merriweather-Regular", serif;
+}
+/* ! rest syle 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+/* Typographic tweaks! 4. Add accessible line-height 5. Improve text rendering */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* ! rest style end */
+body {
+    font-family: var(--ff-FiraSans-Medium);
+    display: grid;
+    /* place-content: center; */
+    margin: 1rem;
+    overflow-x: hidden;
+    background-color: white;
+}
